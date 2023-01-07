@@ -1,0 +1,103 @@
+body {
+  margin: 0px;
+  background-image: url("5293227.jpg");
+  background-size: 310px 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.backbutton {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(27, 189, 62);
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+}
+.backbutton:hover {
+  font-size: 20px;
+  box-shadow: 0px 0px 8px green;
+}
+
+.mainmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(102, 255, 0);
+  background-image: url("5293227.jpg");
+  background-size: 310px 200px;
+}
+.mainmenu .play {
+  width: 300px;
+  height: 80px;
+  background-color: rgb(27, 189, 62);
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  color: black;
+}
+.mainmenu .play:hover {
+  font-size: 35px;
+  box-shadow: 0px 0px 8px green;
+}
+
+.floor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: coral;
+  background-image: url("floor1.jpg");
+  background-size: 20vw 20vh;
+}
+
+.cardboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 600px;
+  height: 520px;
+  background-color: brown;
+  background-image: url("table.jpg");
+  background-size: 10vw 10vh;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+  border: 1px solid rgb(39, 25, 22);
+}
+.cardboard .card {
+  width: 70px;
+  height: 110px;
+  margin-left: 5vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 110px;
+  background-image: url("https://i.ibb.co/ThWyGwQ/cardred.png");
+  background-repeat: no-repeat;
+  background-size: 74px 117px;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 4px 4px 10px black;
+}
+.cardboard .card:hover {
+  box-shadow: 0px 0px 10px green;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .cardboard {
+    gap: 0px;
+  }
+}/*# sourceMappingURL=index.css.map */

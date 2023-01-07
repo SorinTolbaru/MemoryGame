@@ -1,0 +1,146 @@
+body{
+  margin:0px;
+  background-image: url("5293227.jpg");
+  background-size: 310px 200px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+@mixin center($value){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height:$value ;
+}
+
+@mixin menu_buttons {
+  width: 300px;
+  height: 80px;
+  background-color: rgb(27, 189, 62);
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  color: black;
+}
+
+//universal back button
+.backbutton{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(27, 189, 62);
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  &:hover{
+    font-size: 20px;
+    box-shadow: 0px 0px 8px green;
+  }
+}
+
+
+//menu style
+.mainmenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(102, 255, 0);
+  background-image: url("5293227.jpg");
+  background-size: 310px 200px;
+
+  .play{
+    @include menu_buttons;
+    &:hover{
+      font-size: 35px;
+      box-shadow: 0px 0px 8px green;
+    }
+  }
+}
+
+
+
+//About style
+
+
+
+//Game
+.floor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: coral;
+  background-image: url("floor1.jpg");
+  background-size: 20vw 20vh;
+}
+
+
+.cardboard{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 600px;
+  height: 520px;
+  background-color: brown;
+  background-image: url("table.jpg");
+  background-size: 10vw 10vh;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+  border:1px solid rgb(39, 25, 22);
+  .card{
+    width: 70px;
+    height: 110px;
+    margin-left:5vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 110px;
+    background-image: url("https://i.ibb.co/ThWyGwQ/cardred.png");
+    background-repeat: no-repeat;
+    background-size: 74px 117px;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 4px 4px 10px black;
+
+    &:hover{
+      box-shadow: 0px 0px 10px green;
+    }
+    }
+
+}
+
+@media only screen and (min-width:300px) and (max-width:600px){
+  .cardboard{
+    gap: 0px;
+  }
+}
+
+
+
+
+
+//https://i.ibb.co/KmHbwjK/banana1.png
+
+//https://i.ibb.co/hHjt0yM/peach1.png
+
+//https://i.ibb.co/R64KRFx/kiwi1.png
+
+//https://i.ibb.co/SPnsP2V/berry1.png
+
+
+//https://i.ibb.co/frR8RG4/cardred1.png
+//https://i.ibb.co/ThWyGwQ/cardred.png
